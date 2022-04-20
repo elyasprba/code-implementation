@@ -5,6 +5,7 @@
  */
 
 function devideAndSort(num) {
+   // num dijadikan string dan displit
    let hasil = num
       .toString()
       .split(0)
@@ -21,4 +22,4 @@ function devideAndSort(num) {
    return console.log(hasil);
 }
 
-devideAndSort(5956560159466056);
+devideAndSort(98706540321);
