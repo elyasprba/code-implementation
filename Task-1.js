@@ -11,10 +11,10 @@ function cekPalindrom(cek) {
    for (let i = hasil.length - 1; i >= 0; i--) {
       result = result + hasil[i];
    }
-   if (result !== hasil) {
-      return console.log('Bukan Palindrom');
+   if (result === hasil) {
+      return 'Palindrom';
    }
-   return console.log('Palindrom');
+   return 'Bukan Palindrom';
 }
-
-cekPalindrom('makan');
+console.log(cekPalindrom('Malam'));
+console.log(cekPalindrom('Malim'));

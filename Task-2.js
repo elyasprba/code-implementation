@@ -11,4 +11,4 @@ function reverseWords(sentence) {
    return console.log(result.join(' '));
 }
 
-reverseWords('Saya belejar Javascript');
+reverseWords('Saya belajar Javascript');

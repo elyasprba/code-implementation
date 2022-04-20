@@ -16,10 +16,7 @@ function ArkFood(harga, voucer, jarak, pajak) {
    }
 
    // proses tarif
-   let tarifAntar = 0;
-   if (jarak <= 2) {
-      tarifAntar = 5000;
-   }
+   let tarifAntar = 5000;
    if (jarak > 2) {
       tarifAntar = 5000 + (jarak - 2) * 3000;
    }
@@ -35,4 +32,10 @@ function ArkFood(harga, voucer, jarak, pajak) {
    return console.log(`Harga : ${harga} \nPotongan : ${potongan} \nBiaya Antar : ${tarifAntar} \nPajak : ${tarifPajak} \nSubTotal : ${subTotal}`);
 }
 
-ArkFood(75000, 'ARKAFOOD5', 5, true);
+ArkFood(50000, 'ARKAFOOD5', 5, true);
+console.log('-------------');
+ArkFood(30000, 'ARKAFOOD5', 5, true);
+console.log('-------------');
+ArkFood(25000, 'DITRAKTIRDEMY', 2, false);
+console.log('-------------');
+ArkFood(3000, '', 2, false);
