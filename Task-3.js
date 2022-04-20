@@ -31,7 +31,6 @@ function ArkFood(harga, voucer, jarak, pajak) {
    }
 
    // proses perhitungan total
-
    let subTotal = harga - potongan + tarifAntar + tarifPajak;
    return console.log(`Harga : ${harga} \nPotongan : ${potongan} \nBiaya Antar : ${tarifAntar} \nPajak : ${tarifPajak} \nSubTotal : ${subTotal}`);
 }
