@@ -5,13 +5,13 @@
  */
 
 function cekPalindrom(cek) {
-   let hasil = cek;
-   let newString = '';
+   let hasil = cek.toLowerCase();
+   let result = '';
 
    for (let i = hasil.length - 1; i >= 0; i--) {
-      newString = newString + hasil[i];
+      result = result + hasil[i];
    }
-   if (newString !== hasil) {
+   if (result !== hasil) {
       return console.log('Bukan Palindrom');
    }
    return console.log('Palindrom');
